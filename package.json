@@ -1,17 +1,25 @@
 {
-  "name": "@tgthuan/sum",
-  "version": "1.0.0",
-  "description": "sum numbers",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "sum",
-    "number",
-    "sum",
-    "numbers"
-  ],
-  "author": "tgthuan",
-  "license": "MIT"
+    "name": "@tgthuan/sum-numbers",
+    "version": "1.0.0",
+    "description": "sum numbers",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node ./node_modules/webpack/bin/webpack.js --mode production --watch --progress",
+        "build": "node ./node_modules/webpack/bin/webpack.js --mode production --progress"
+    },
+    "keywords": [
+        "sum",
+        "number",
+        "sum",
+        "numbers"
+    ],
+    "author": "tgthuan",
+    "license": "MIT",
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.1"
+    }
 }
